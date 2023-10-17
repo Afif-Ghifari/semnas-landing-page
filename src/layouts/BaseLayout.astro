@@ -1,5 +1,6 @@
 ---
-
+import BaseFooter from "./BaseFooter.astro";
+import HeaderLayout from "./HeaderLayout.astro"
 ---
 
 <html lang="en">
@@ -23,7 +24,9 @@
 </head>
 
 <body class="bg-slate-950 text-white w-full">
+    <HeaderLayout />
     <slot />
+    <BaseFooter />
 </body>
 
 </html>
